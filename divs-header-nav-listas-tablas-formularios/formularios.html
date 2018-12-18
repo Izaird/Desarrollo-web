@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Creando los formularios</h2>
+    <!-- Se puede saltar la validacion agregando novalidate en form como atributo -->
+    <form action="" class="formulario">
+        <!-- Ayuda a agrupar contenido que esta relacionado -->
+        <fieldset>
+            <legend>Tus datos</legend>
+            <!-- el atributo for en label es para que cuando se presione el label se active el input -->
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" autocomplete="off" placeholder="Tu nombre..." required>
+            <br>
+            <br>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" autocomplete="off" placeholder="Tu apellido..." required>
+            <br><br>
+            <label for="sexo">Sexo:</label><br>
+            <input type="radio" id="sexo" name="sexo" value="hombre" checked>Hombre <br>
+            <input type="radio" id="sexo" name="sexo" value="mujer">Mujer <br>
+            <input type="radio" id="sexo" name="sexo" value="otro">Otro <br>
+            <br>
+            <label for="">Fecha de cumpleaños</label>
+            <input type="date">
+            <input type="datetime-local">
+
+        </fieldset>
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Informacion sobre tu curso</legend>
+            <label for="turno">Turno:</label>
+            <select name="turno" id="turno" class="turno">
+                <option value="matutino">Matutino</option>
+                <option value="verpertino" selected>Vespertino</option>
+                <option value="nocturno">Nocturno</option>
+
+            </select>
+
+            <br><br>
+            <label for="">Que curso te gustaria que agregaramos?</label>
+            <input list="propuesta" name="encuesta">
+            <datalist id="propuesta">
+                <option value="JQuery"></option>
+                <option value="Angular.js"></option>
+                <option value="Botstrap"></option>
+                <option value="Aplicaciones Web"></option>
+            </datalist>
+            <br><br>
+            <label for="">Elige tus cursos:</label> <br>
+            <input type="checkbox" value="php">PHP <br>
+            <input type="checkbox" value="html5">HMTL5 <br>
+            <input type="checkbox" value="css3">CSS3 <br>
+            <input type="checkbox" value="mysql">MySQL <br>
+            <input type="checkbox" value="js">JS <br>
+            <input type="checkbox" value="jquery">JQuery <br>
+
+            <label for="">Fecha en la que desesas inciar el curso</label>
+            <input type="month" name="fecha"><br>
+            <input type="time"><br>
+            <input type="week">
+            <br><br>
+            <label for="">Correo electronico</label>
+            <input type="email" name="email" placeholder="correo@dominio.com" required>
+            <br><br>
+
+            <label for="">Tu sitio web:</label>
+            <input type="url" name="sitioweb" placeholder="http://www.dominio.com">
+
+            <br><br>
+            <label for="">Cuanto sabes de HTML</label>
+            <input type="range" name="puntaje" min="0" max="10">
+            <br><br>
+
+            <label for="">Personas que vienen contigo</label>
+            <input type="number" name="puntaje" min="0" max="10">
+
+
+
+
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Extra</legend>
+            <label for="">Las primeras 10 personas reciben una camisa gratis, elige el color</label>
+            <input type="color" name="color">
+
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Usuario y password</legend>
+            <label for="usuario">Usuario:</label><br>
+            <input type="text" id="usuario"><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password">
+
+        </fieldset>
+        <br><br>
+        <button type="reset">Borrar</button>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

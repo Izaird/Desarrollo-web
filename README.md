@@ -1,4 +1,4 @@
-Esto es material echo para estudiar
+Este material fue creado con fines académicos
 ===
 
 
